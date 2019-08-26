@@ -40,7 +40,7 @@ class MyHomePage extends StatefulWidget {
   // always marked "final".
 
   final String title;
-  final picsdir=r'C:\developement\background photos\';
+  final picsdir='images/';
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -65,16 +65,16 @@ class _MyHomePageState extends State<MyHomePage> {
     return PhotoViewGallery(
       pageOptions: <PhotoViewGalleryPageOptions>[
         PhotoViewGalleryPageOptions(
-          imageProvider: AssetImage('${widget.picsdir}parrot.jpg'),
+          imageProvider: AssetImage('${widget.picsdir}dogs.jpg'),
         ),
         PhotoViewGalleryPageOptions(
-          imageProvider: AssetImage('${widget.picsdir}too_much_gold.jpg'),
+          imageProvider: AssetImage('${widget.picsdir}dogs.jpg'),
         ),
         PhotoViewGalleryPageOptions(
-          imageProvider: AssetImage('${widget.picsdir}beutifull_lake.jpeg'),
+          imageProvider: AssetImage('${widget.picsdir}dogs.jpg'),
         ),
         PhotoViewGalleryPageOptions(
-          imageProvider: AssetImage('${widget.picsdir}some_tower.jpg'),
+          imageProvider: AssetImage('${widget.picsdir}dogs.jpg'),
         ),
       ],
     );
